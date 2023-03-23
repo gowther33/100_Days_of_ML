@@ -2,10 +2,10 @@
 Vigenere Cipher is a method of encryption that is a combination of multiple caesar ciphers. In Caesar cipher 
 we shift every letter by 3 to get the cipher text. In Vigenere Cipher we use key to encrypt the message. The message is
 called plain text. The encryption plain text is done using the Vigenère table (tabula recta).
+
+Approach:
+The key letters are looked by row in the table and plain text letters are looked by column. The intersect of both gives the cipher text letters.
 """
-
-
-
 
 def encipher_decipher(txt:str, key:str, encipher:bool):
     res = ""
